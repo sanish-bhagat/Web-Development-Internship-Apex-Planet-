@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("https://wallpaperaccess.com/full/2454628.png") no-repeat center center/cover;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    gap: 20px;
+}
+
+.form_container, .todo_container {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 350px;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+    padding: 20px;
+}
+
+.input_field {
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.todo_input_group {
+    display: flex;
+    gap: 10px; /* Space between input and button */
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#todoInput {
+    flex: 1; /* Make input field take full available space */
+    padding: 7.2px;
+    border-radius: 4px;
+}
+
+.add-btn {
+    height: 36px;
+    padding: 0 16px;
+    background-color: rgb(33, 129, 254);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s linear;
+}
+
+.add-btn:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+}
+
+@media(min-width: 768px) {
+
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .input_field {
+        grid-template-columns: 30% 70%;
+        align-items: center;
+    }
+
+    form, .todo_container {
+        width: 48%;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    width: 90%;
+    margin: 10px 0 4px 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+}
+
+input[type='text'], 
+input[type='password'], 
+input[type='email'], 
+textarea {
+    margin: 10px 0;
+    padding: 8px;
+    resize: none;
+}
+
+.submit {
+    /* margin-top: 20px; */
+    height: 36px;
+    width: 35%;
+    align-items: center;
+    min-width: 100px;
+    max-width: 140px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(33, 129, 254);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: box-shadow 0.3s linear;
+}
+
+.submit:hover, .add_task:hover {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.delete-btn {
+    color: red;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+li {
+    margin: 10px 15px;
+    color: #fff;
+    font-size: 18px;
+}
