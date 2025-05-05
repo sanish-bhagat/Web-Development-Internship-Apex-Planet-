@@ -68,7 +68,7 @@ p {
 /* Tablet screens (768px and below) */
 @media screen and (max-width: 768px) {
     .question_container {
-        width: 40vw;
+        width: 60vw;
         height: auto;
         padding: 20px;
     }
@@ -97,7 +97,7 @@ p {
 /* Mobile screens (480px and below) */
 @media screen and (max-width: 480px) {
     .question_container {
-        width: 40vw;
+        width: 60vw;
         padding: 15px;
     }
 
