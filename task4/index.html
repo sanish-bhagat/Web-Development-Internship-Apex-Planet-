@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="name">My Portfolio</div>
+
+        <!-- Hamburger icon -->
+        <!-- <div class="hamburger" id="hamburger">&#9776;</div> -->
+        <div class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </div>
+
+
+        <!-- Navigation links -->
+        <ul class="nav_links" id="nav-links">
+            <li id="close_btn" class="close-btn" style="position: absolute; top: 2rem; right: 2rem; font-size: 2rem; cursor: pointer; color:red; font-weight: bold; font-size: 3rem; display: none;">&times;</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <section id="home">
+        <div class="hero_container">
+            <div class="hero_text">
+                <h1>Hi! I am Sanish Bhagat 👋</h1>
+                <p>From Kolkata</p>
+            </div>
+
+            <div class="hero_img">
+                <img src="S2 P.jpg" alt="profile_image">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About</h2>
+
+        <div class="about_container">
+
+            <div class="about_img">
+                <img src="S2 P.jpg" alt="profile_image">
+            </div>
+
+            <div class="tab_container">
+                <div class="tab_nav">
+                    <button class="tab_button active" data-tab="Bio">Bio</button>
+                    <button class="tab_button" data-tab="Skills">Skills</button>
+                    <button class="tab_button" data-tab="Experience">Experience</button>
+                </div>
+
+                <div class="tab_content">
+                    <div class="tab_pane active" id="Bio">
+                        <p>
+                            Hey! I'm Sanish Bhagat, currently pursuing my B-Tech degree from JIS College of
+                            Engineering(2023-27). Passionate about coding, learning and building new things which help
+                            to
+                            enhance my skills. When I'm not coding, you will find me playing cricket or riding bikes.
+                        </p>
+                    </div>
+
+                    <div class="tab_pane" id="Skills">
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>HTML, CSS, JS</li>
+                            <li>Aspiring Data-Scientist</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_pane" id="Experience">
+                        <ul>
+                            <li>Internship at AWS(AI-ML)</li>
+                            <li>Internship at Apex Planet</li>
+                            <li>Internship at Pinnacle Lab</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects_section" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project_container">
+
+            <div class="project_card">
+                <img src="quiz.jpg" alt="quiz_game">
+                <h3>Quiz Game</h3>
+                <p>A user Friendly Quiz Game with a joke pop-up button.</p>
+                <div class="project_links">
+                    <a href="https://quiz-joke-sanishbhagat.netlify.app/" target="_blank">View Project</a>
+                    <a href="https://github.com/sanish-bhagat/Web-Development-Internship-Apex-Planet-/tree/main/task2"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project_card">
+                <img src="todo.png" alt="todo_image">
+                <h3>To-Do List</h3>
+                <p>A simple to-do list app that uses localStorage for task persistence.</p>
+                <div class="project_links">
+                    <a href="https://form-todo-sanish-bhagat.netlify.app/" target="_blank">View Project</a>
+                    <a href="https://github.com/sanish-bhagat/Web-Development-Internship-Apex-Planet-/tree/main/task3"
+                        target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project_card">
+                <img src="portfolio.jpg" alt="portfolio">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio website built using HTML, CSS, and JavaScript.</p>
+                <div class="project_links">
+                    <a href="#" target="_blank">View Project</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_section" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or opportunities, feel free to reach out!</p>
+
+        <div class="contact_container">
+            <div class="form_container">
+                <form class="contact_form" id="contact-form" action="https://formspree.io/f/xkgrzeve" method="POST">
+                    <input type="hidden" name="_redirect" value="https://yourdomain.com/thankyou.html">
+
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <input type="text" name="subject" placeholder="Subject" />
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="social_icons">
+                <h3>Reach Me Out👇</h3>
+                <div class="icon_container_horizontal">
+                    <a href="tel:+918697191230" target="_blank">
+                        <i class="fas fa-phone"></i> 8697191230
+                    </a>
+                    <a href="mailto:sanishbhagat3@gmail.com" target="_blank">
+                        <i class="fas fa-envelope"></i> sanishbhagat3@gmail.com
+                    </a>
+                    <a href="https://wa.me/918697191230" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Drop a Message
+                    </a>
+                </div>
+
+
+                <div class="icon_container_vertical">
+                    <a href="https://www.instagram.com/sanishbhagat/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sanish-bhagat-1795a6293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/sanish-bhagat" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/SanishBhagat" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Structure -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Thank You!</h2>
+            <p>Your message has been sent successfully.</p>
+            <button id="close-popup">Close</button>
+        </div>
+    </div>
+</body>
+<script src="java.js"></script>
+
+</html>
