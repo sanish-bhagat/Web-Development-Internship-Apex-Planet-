@@ -607,33 +607,6 @@ button:hover {
     max-width: 22rem;
   }
 
-  /* .nav_links {
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    display: none;
-    text-align: center;
-    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
-    overflow: hidden;
-    max-height: 0;
-    opacity: 0;
-    z-index: 1000;
-  }
-
-  .nav_links li a {
-    padding: 1rem;
-    color: black;
-  }
-
-  .nav_links.show {
-    display: flex;
-    max-height: 500px;
-    opacity: 1;
-  } */
-
   .nav_links {
     position: fixed;
     top: 0;
@@ -689,37 +662,6 @@ button:hover {
 
   .hamburger {
     display: block;
-  }
-}
-
-
-/* Tablets (769px - 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .navbar {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1.5rem;
-  }
-
-  .hero_container,
-  .about_container {
-    flex-direction: column;
-    padding: 4rem;
-    text-align: center;
-  }
-
-  .project_card {
-    width: 90%;
-    max-width: 22rem;
-  }
-
-  .contact_container {
-    flex-direction: column;
-  }
-
-  .contact_form {
-    width: 100%;
-    max-width: 24rem;
   }
 }
 
